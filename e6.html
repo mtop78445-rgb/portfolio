@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Épreuve E6 – Gabriel CIOBANU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="./">Gabriel CIOBANU <span>SIO SISR</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+    <ul class="menu" id="menu"><li><a href="./">Accueil</a></li><li><a href="e5.html">Épreuve E5</a></li><li><a href="e6.html" class="active">Épreuve E6</a></li><li><a href="entreprise.html">Entreprise</a></li><li><a href="veille.html">Veille Technologique</a></li></ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="stack">
+    <h1 class="page-title">Épreuve E6</h1>
+    <article class="card intro">
+      <p>L'épreuve <strong>E6</strong> porte sur des situations réelles de cybersécurité vécues en entreprise. Je présente deux réalisations menées chez <strong>LACROIXSAVAC</strong>.</p>
+      <h2>Objectifs de l'épreuve</h2>
+      <ul class="clean">
+        <li><strong>Analyse</strong> : comprendre la situation et identifier les risques.</li>
+        <li><strong>Mise en œuvre</strong> : appliquer une solution en sécurisant chaque action.</li>
+        <li><strong>Exploitation</strong> : tracer, documenter et rendre compte.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="stack">
+    <h2 class="section-title">Les réalisations en entreprise</h2>
+    <article class="card">
+      <span class="kicker">Réalisation n°1</span>
+      <h3>Nettoyage de l'Active Directory : postes du CN Container</h3>
+      <p class="muted">Des postes étaient hors de toute OU et ne recevaient pas leurs GPO. Je les ai rangés, contrôlés dans SentinelOne, puis j'ai supprimé les postes obsolètes après validation. J'ai aussi détecté 6 postes actifs sans protection EDR.</p>
+      <div class="tags"><span>Active Directory</span><span>PowerShell</span><span>SentinelOne</span><span>GPO</span></div>
+      <div class="preview"><img src="img/gantt_e6_nettoyage_ad.png" alt="Diagramme de Gantt de la réalisation n°1" loading="lazy"></div>
+      <a class="btn" href="https://drive.google.com/file/d/1XOaWhk2lcOA1BHZnS-OJNu3aDbYD5v7L/view?usp=sharing" target="_blank" rel="noopener">Fiche de réalisation (PDF)</a>
+    </article>
+    <article class="card">
+      <span class="kicker">Réalisation n°2</span>
+      <h3>Retrait des droits d'administrateur local</h3>
+      <p class="muted">25 utilisateurs avaient les droits d'administrateur sur leur poste. Je les ai contactés et retiré ces droits ; en cas de besoin, ils ouvrent un ticket GLPI et reçoivent des droits temporaires.</p>
+      <div class="tags"><span>Moindre privilège</span><span>Windows</span><span>GLPI</span></div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>© Gabriel CIOBANU – Portfolio BTS SIO SISR</p>
+  <p>2026 – Tous droits réservés · <a href="https://www.linkedin.com/in/gabriel-ciobanu-a6929533b/" target="_blank" rel="noopener">LinkedIn</a></p>
+</footer>
+<script>
+  (function () {
+    var b = document.getElementById('burger'), m = document.getElementById('menu');
+    b.addEventListener('click', function () {
+      var o = m.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>

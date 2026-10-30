@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Portfolio Gabriel CIOBANU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="./">Gabriel CIOBANU <span>SIO SISR</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+    <ul class="menu" id="menu"><li><a href="./" class="active">Accueil</a></li><li><a href="e5.html">Épreuve E5</a></li><li><a href="e6.html">Épreuve E6</a></li><li><a href="entreprise.html">Entreprise</a></li><li><a href="veille.html">Veille Technologique</a></li></ul>
+  </div>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="hero-in">
+    <div class="hero-card">
+      <h1>Gabriel CIOBANU</h1>
+      <p class="sub">Étudiant en BTS SIO SISR</p>
+      <p>Alternant chez <span class="company">LACROIXSAVAC</span><br>Technicien Support Informatique</p>
+      <div class="pills">
+        <a class="pill" href="#profil">Profil</a>
+        <a class="pill" href="#certification">Certification</a>
+        <a class="pill" href="#contact">Contacter</a>
+      </div>
+    </div>
+    <img class="avatar" src="img/photo.jpg" alt="Photo de Gabriel CIOBANU">
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="stack" id="profil">
+    <h2 class="page-title blue">Mon Profil</h2>
+    <div class="grid2">
+      <article class="card top-blue">
+        <h2>À propos de moi</h2>
+        <p>Actuellement étudiant en deuxième année de BTS SIO option SISR à l'école IRIS à Paris. Passionné par l'informatique, le montage de PC et les réseaux.</p>
+        <p>Rigoureux, réactif et autonome, je mets en pratique mes compétences en alternance chez LACROIXSAVAC.</p>
+        <p>Langues : roumain, russe, moldave, anglais et français.</p>
+        <a class="btn" href="docs/CV_Gabriel_Ciobanu.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+      </article>
+      <article class="card top-violet">
+        <h2>Formation &amp; Diplômes</h2>
+        <ul class="clean">
+          <li><strong>BTS SIO SISR</strong> (2025 – aujourd'hui) – IRIS Paris</li>
+          <li><strong>Bac Pro Métiers de la Vente</strong> (2023 – 2025) – mention très bien, Lycée Cognacq-Jay, Argenteuil</li>
+          <li><strong>CAP Employé polyvalent du commerce</strong> (2021 – 2023) – Lycée Grand Cerf, Bezons</li>
+        </ul>
+      </article>
+      <article class="card top-green">
+        <h2>Expériences Pro</h2>
+        <div class="exp"><strong>Technicien Support Informatique – LACROIXSAVAC</strong><span>2026 – aujourd'hui (alternance)</span></div>
+        <div class="exp"><strong>Technicien systèmes et réseaux – Circle Consulting</strong><span>Sept. 2025 – juil. 2026 (alternance)</span></div>
+        <div class="exp"><strong>Préparateur de commandes – Carrefour Montesson</strong><span>Depuis janv. 2025</span></div>
+        <div class="exp"><strong>Services généraux – ReCommerce Solutions</strong><span>2023 – 2025 (stage, job d'été, CDD)</span></div>
+      </article>
+      <article class="card top-blue">
+        <h2>Mes centres d'intérêt</h2>
+        <div class="interests">
+          <span>Réseaux</span><span>Cybersécurité</span><span>Montage PC</span><span>Musculation</span><span>Judo</span><span>Vélo</span><span>Natation</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="stack" id="certification">
+    <h2 class="page-title blue">Mes Certifications</h2>
+    <div class="grid2">
+      <article class="card">
+        <h3>Cisco CCNA 200-301</h3>
+        <p class="muted">Certification réseau Cisco, en cours de préparation.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="stack" id="contact">
+    <h2 class="page-title blue">Contact</h2>
+    <article class="card">
+      <h2>Restons en contact</h2>
+      <p class="muted">N'hésitez pas à me contacter pour échanger sur mes projets ou une opportunité.</p>
+      <div class="contact-grid">
+        <div class="contact-item"><span>Email</span><strong>gabriel.ciobanu.it@gmail.com</strong></div>
+        <div class="contact-item"><span>Téléphone</span><strong>06 95 28 10 33</strong></div>
+        <div class="contact-item"><span>LinkedIn</span><strong><a href="https://www.linkedin.com/in/gabriel-ciobanu-a6929533b/" target="_blank" rel="noopener">Gabriel CIOBANU</a></strong></div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>© Gabriel CIOBANU – Portfolio BTS SIO SISR</p>
+  <p>2026 – Tous droits réservés · <a href="https://www.linkedin.com/in/gabriel-ciobanu-a6929533b/" target="_blank" rel="noopener">LinkedIn</a></p>
+</footer>
+<script>
+  (function () {
+    var b = document.getElementById('burger'), m = document.getElementById('menu');
+    b.addEventListener('click', function () {
+      var o = m.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>

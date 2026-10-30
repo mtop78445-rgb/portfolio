@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Veille technologique – Gabriel CIOBANU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="./">Gabriel CIOBANU <span>SIO SISR</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+    <ul class="menu" id="menu"><li><a href="./">Accueil</a></li><li><a href="e5.html">Épreuve E5</a></li><li><a href="e6.html">Épreuve E6</a></li><li><a href="entreprise.html">Entreprise</a></li><li><a href="veille.html" class="active">Veille Technologique</a></li></ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="stack">
+    <h1 class="page-title blue">La Veille Technologique</h1>
+    <div class="grid2">
+      <article class="card top-blue">
+        <h2>Qu'est-ce qu'une veille technologique ?</h2>
+        <p class="muted">La veille technologique consiste à collecter et analyser régulièrement des informations techniques pour rester à jour et anticiper les évolutions.</p>
+      </article>
+      <article class="card top-violet">
+        <h2>Qu'est-ce que j'utilise pour ma veille ?</h2>
+        <p class="muted">J'utilise Google Alertes, le CERT-FR, IT-Connect et LinkedIn. J'y consacre environ 30 minutes par semaine.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="theme-head"><span class="kicker">Thématique 1</span><h2 class="section-title">L'IA au service de la détection des menaces</h2><p class="muted">Comment l'intelligence artificielle aide les EDR à détecter et bloquer les attaques sur les postes de travail.</p></div>
+    <div class="grid3"><article class="card article"><div class="meta"><span class="tag">Menaces</span><time>Mars 2026</time></div><h3>ANSSI : Panorama de la cybermenace 2025</h3><p class="muted">L'ANSSI a traité 3 586 événements de sécurité en 2025. Les vols de données sont en forte hausse, ce qui demande de détecter des comportements et pas seulement des virus.</p><p class="src">Source : <a href="https://cyber.gouv.fr/actualites/panorama-de-la-cybermenace-2025/" target="_blank" rel="noopener">cyber.gouv.fr</a></p></article><article class="card article"><div class="meta"><span class="tag">EDR</span><time>Avril 2026</time></div><h3>Les EDR misent sur l'analyse comportementale</h3><p class="muted">Les solutions EDR combinent analyse du comportement et apprentissage automatique pour détecter des attaques qu'un antivirus classique ne voit pas.</p><p class="src">Source : <a href="https://www.acronis.com/fr/blog/posts/best-edr-endpoint-detection-and-response-solutions-in-2026/" target="_blank" rel="noopener">acronis.com</a></p></article><article class="card article"><div class="meta"><span class="tag">SentinelOne</span><time>Juin 2026</time></div><h3>Purple AI : l'enquête automatisée pour tous</h3><p class="muted">SentinelOne ouvre à tous ses clients une IA qui enquête seule sur une menace et propose un verdict. C'est l'outil que j'utilise en entreprise.</p><p class="src">Source : <a href="https://www.sentinelone.com/press/sentinelone-opens-purple-ai-agentic-investigation-to-all-customers-bringing-frontier-ai-directly-into-the-soc/" target="_blank" rel="noopener">sentinelone.com</a></p></article></div>
+  </section>
+
+  <section class="stack">
+    <div class="theme-head"><span class="kicker">Thématique 2</span><h2 class="section-title">L'authentification forte : MFA et passkeys</h2><p class="muted">Pourquoi le mot de passe seul ne suffit plus, et ce qui le remplace.</p></div>
+    <div class="grid3"><article class="card article"><div class="meta"><span class="tag">ANSSI</span><time>Octobre 2021</time></div><h3>Guide : mots de passe et authentification multifacteur</h3><p class="muted">L'ANSSI recommande fortement la MFA et déconseille le SMS comme second facteur, à cause du risque de SIM swapping.</p><p class="src">Source : <a href="https://www.it-connect.fr/nouveau-guide-anssi-sur-les-mots-de-passe-et-lauthentification-multifacteur/" target="_blank" rel="noopener">it-connect.fr</a></p></article><article class="card article"><div class="meta"><span class="tag">Microsoft</span><time>Septembre 2025</time></div><h3>La MFA devient obligatoire sur Azure</h3><p class="muted">Depuis octobre 2025, Microsoft impose la MFA pour gérer les ressources Azure, y compris en ligne de commande.</p><p class="src">Source : <a href="https://www.it-connect.fr/administrateurs-azure-preparez-vous-le-mfa-devient-incontournable-en-octobre-2025/" target="_blank" rel="noopener">it-connect.fr</a></p></article><article class="card article"><div class="meta"><span class="tag">Passkeys</span><time>Mai 2026</time></div><h3>L'adoption des passkeys s'accélère</h3><p class="muted">Selon la FIDO Alliance, environ 5 milliards de passkeys sont utilisées et 68 % des organisations les déploient pour leurs employés.</p><p class="src">Source : <a href="https://fidoalliance.org/fido-alliance-reports-accelerating-global-passkey-adoption-on-world-passkey-day-2026/" target="_blank" rel="noopener">fidoalliance.org</a></p></article></div>
+  </section>
+
+  <section class="stack">
+    <h2 class="section-title">Mes outils de veille</h2>
+    <div class="grid2">
+<article class="card tool"><div class="ico t-blue">GA</div><div><h3>Google Alertes</h3><p class="muted">Alertes par mots-clés (EDR, MFA, SentinelOne).</p></div></article>
+<article class="card tool"><div class="ico t-dark">FR</div><div><h3>CERT-FR / ANSSI</h3><p class="muted">Alertes de sécurité et publications officielles.</p></div></article>
+<article class="card tool"><div class="ico t-green">IT</div><div><h3>IT-Connect</h3><p class="muted">Actualités et tutoriels en français.</p></div></article>
+<article class="card tool"><div class="ico t-violet">in</div><div><h3>LinkedIn</h3><p class="muted">Publications d'éditeurs et de professionnels de la sécurité.</p></div></article>
+</div>
+  </section>
+</main>
+
+<footer>
+  <p>© Gabriel CIOBANU – Portfolio BTS SIO SISR</p>
+  <p>2026 – Tous droits réservés · <a href="https://www.linkedin.com/in/gabriel-ciobanu-a6929533b/" target="_blank" rel="noopener">LinkedIn</a></p>
+</footer>
+<script>
+  (function () {
+    var b = document.getElementById('burger'), m = document.getElementById('menu');
+    b.addEventListener('click', function () {
+      var o = m.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>

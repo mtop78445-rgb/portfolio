@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Entreprise – Gabriel CIOBANU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="./">Gabriel CIOBANU <span>SIO SISR</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">&#9776;</button>
+    <ul class="menu" id="menu"><li><a href="./">Accueil</a></li><li><a href="e5.html">Épreuve E5</a></li><li><a href="e6.html">Épreuve E6</a></li><li><a href="entreprise.html" class="active">Entreprise</a></li><li><a href="veille.html">Veille Technologique</a></li></ul>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="stack">
+    <h1 class="page-title">Mon Alternance chez LACROIXSAVAC</h1>
+    <article class="card intro">
+      <p>LACROIXSAVAC est un groupement de transport de voyageurs en Île-de-France, issu du rapprochement des sociétés Lacroix et Savac. Il exploite des lignes de bus régulières, des transports scolaires, des navettes d'entreprises et des substitutions SNCF.</p>
+      <p>J'ai intégré l'entreprise en septembre 2026 comme technicien support informatique. L'équipe informatique est petite, ce qui me permet de toucher à beaucoup de sujets : support, gestion du parc, Active Directory et sécurité.</p>
+    </article>
+  </section>
+
+  <section class="stack">
+    <h2 class="section-title">Identité de l'entreprise</h2>
+    <article class="card">
+      <dl class="ident">
+        <div><dt>Nom</dt><dd>LACROIXSAVAC (groupement Lacroix &amp; Savac)</dd></div>
+        <div><dt>Groupe</dt><dd>CFTR – Compagnie française des transports régionaux</dd></div>
+        <div><dt>Siège</dt><dd>Beauchamp (95)</dd></div>
+        <div><dt>Activités</dt><dd>Lignes régulières, transports scolaires, navettes d'entreprises, substitutions SNCF</dd></div>
+        <div><dt>Effectif</dt><dd>Environ 1 800 salariés</dd></div>
+        <div><dt>Réseau</dt><dd>Environ 164 lignes, réparties sur plusieurs sites et filiales (Francilité…)</dd></div>
+        <div><dt>Service informatique</dt><dd>Responsable systèmes et exploitation, ingénieur, alternant</dd></div>
+      </dl>
+    </article>
+  </section>
+
+  <section class="stack">
+    <h2 class="section-title">Projets Professionnels</h2>
+    <article class="card">
+      <p class="muted">Découvrez les réalisations que j'ai menées pendant mon alternance.</p>
+      <a class="btn" href="e6.html">Voir mes Projets Professionnels</a>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>© Gabriel CIOBANU – Portfolio BTS SIO SISR</p>
+  <p>2026 – Tous droits réservés · <a href="https://www.linkedin.com/in/gabriel-ciobanu-a6929533b/" target="_blank" rel="noopener">LinkedIn</a></p>
+</footer>
+<script>
+  (function () {
+    var b = document.getElementById('burger'), m = document.getElementById('menu');
+    b.addEventListener('click', function () {
+      var o = m.classList.toggle('open'); b.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  })();
+</script>
+</body>
+</html>
