@@ -212,3 +212,6 @@ footer a { color: #fff; }
 
 :focus-visible { outline: 3px solid #ffb37a; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Encadré d'information (E6) */
+.note { background: var(--nav); color: #fff; border-top: 4px solid var(--orange); border-radius: 12px; padding: 14px 18px; font-style: italic; }

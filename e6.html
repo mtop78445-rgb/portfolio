@@ -23,32 +23,21 @@
   <section class="stack">
     <h1 class="page-title">Épreuve E6</h1>
     <article class="card intro">
-      <p>L'épreuve <strong>E6</strong> porte sur des situations réelles de cybersécurité vécues en entreprise. Je présente deux réalisations menées chez <strong>LACROIXSAVAC</strong>.</p>
+      <p>L'épreuve <strong>E6</strong> (session 2027) du BTS SIO SISR évalue la capacité à concevoir, déployer et administrer une infrastructure réseau complète. Les situations professionnelles se déroulent au sein de <strong>StadiumCompany</strong>, qui gère un grand stade et s'appuie sur l'expertise de <strong>NetworkingCompany</strong> pour ses solutions systèmes et réseaux.</p>
       <h2>Objectifs de l'épreuve</h2>
       <ul class="clean">
-        <li><strong>Analyse</strong> : comprendre la situation et identifier les risques.</li>
-        <li><strong>Mise en œuvre</strong> : appliquer une solution en sécurisant chaque action.</li>
-        <li><strong>Exploitation</strong> : tracer, documenter et rendre compte.</li>
+        <li><strong>Conception</strong> : analyse des besoins et choix d'architecture (VLAN, DMZ).</li>
+        <li><strong>Mise en œuvre</strong> : services Windows Server 2022 (AD, DNS, DHCP) et équipements Cisco.</li>
+        <li><strong>Exploitation</strong> : supervision avec Nagios XI et gestion de parc avec GLPI.</li>
       </ul>
+      <p class="note">Les deux réalisations ci-dessous ont été développées à partir de ce cahier des charges.</p>
+      <a class="btn" href="docs/Cahier_des_Charges_StadiumCompany_E6.pdf" target="_blank" rel="noopener">Voir le cahier des charges StadiumCompany</a>
     </article>
   </section>
 
   <section class="stack">
-    <h2 class="section-title">Les réalisations en entreprise</h2>
-    <article class="card">
-      <span class="kicker">Réalisation n°1</span>
-      <h3>Nettoyage de l'Active Directory : postes du CN Container</h3>
-      <p class="muted">Des postes étaient hors de toute OU et ne recevaient pas leurs GPO. Je les ai rangés, contrôlés dans SentinelOne, puis j'ai supprimé les postes obsolètes après validation. J'ai aussi détecté 6 postes actifs sans protection EDR.</p>
-      <div class="tags"><span>Active Directory</span><span>PowerShell</span><span>SentinelOne</span><span>GPO</span></div>
-      <div class="preview"><img src="img/gantt_e6_nettoyage_ad.png" alt="Diagramme de Gantt de la réalisation n°1" loading="lazy"></div>
-      <a class="btn" href="https://drive.google.com/file/d/1XOaWhk2lcOA1BHZnS-OJNu3aDbYD5v7L/view?usp=sharing" target="_blank" rel="noopener">Fiche de réalisation (PDF)</a>
-    </article>
-    <article class="card">
-      <span class="kicker">Réalisation n°2</span>
-      <h3>Retrait des droits d'administrateur local</h3>
-      <p class="muted">25 utilisateurs avaient les droits d'administrateur sur leur poste. Je les ai contactés et retiré ces droits ; en cas de besoin, ils ouvrent un ticket GLPI et reçoivent des droits temporaires.</p>
-      <div class="tags"><span>Moindre privilège</span><span>Windows</span><span>GLPI</span></div>
-    </article>
+    <h2 class="page-title blue">Les réalisations en cours de formation</h2>
+    <div class="grid2"><article class="project"><div class="thumb"><img src="img/gantt_e6_r1_restauration.png" alt="Diagramme de Gantt du projet" loading="lazy"></div><div class="body"><span class="kicker">Réalisation n°1</span><h3>Mise en œuvre d'une infrastructure réseau et système sécurisée pour le service restauration de StadiumCompany</h3><p>Le restaurant de StadiumCompany a modernisé sa prise de commande avec des tablettes sans fil. L'enjeu : donner un accès sécurisé aux menus et au logiciel de caisse, tout en isolant strictement les flux de paiement (norme PCI-DSS).</p><div class="tags"><span>Cisco</span><span>Active Directory</span><span>GPO</span><span>Wi-Fi (AIR-CAP3502I)</span></div><div class=links><a href="docs/E6_Realisation_1_restauration.pdf" target="_blank" rel="noopener">Voir la fiche de réalisation →</a></div></div></article><article class="project"><div class="thumb"><img src="img/gantt_e6_r2_supervision.png" alt="Diagramme de Gantt du projet" loading="lazy"></div><div class="body"><span class="kicker">Réalisation n°2</span><h3>Optimisation de la gestion de parc et de la disponibilité des services métier de StadiumCompany</h3><p>Les terminaux de commande et les caisses du restaurant doivent être inventoriés de façon centralisée. Le Wi-Fi étant critique pour l'activité, une supervision permanente permet à la DSI de réagir immédiatement en cas d'incident.</p><div class="tags"><span>Nagios XI</span><span>Active Directory</span><span>GLPI</span><span>Zimbra</span></div><div class=links><a href="docs/E6_Realisation_2_gestion_parc_supervision.pdf" target="_blank" rel="noopener">Voir la fiche de réalisation →</a></div></div></article></div>
   </section>
 </main>
 
